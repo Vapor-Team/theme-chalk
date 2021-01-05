@@ -1,0 +1,41 @@
+@component-namespace v
+  @component tooltip
+    background #333
+    color white
+    white-space nowrap
+    font-weight bold
+    padding 8px 10px
+    font-size 14px
+    border-radius 4px
+    width 0
+    display none
+    opacity 0
+
+    @e arrow
+      &&, &&::before
+        position absolute
+        width 8px
+        height 8px
+        z-index -1
+
+    @e arrow::before
+      content ''
+      transform rotate(45deg)
+      background #333
+
+    &&[data-show]
+      display inline-block
+      opacity 1
+      width auto
+
+    &&[data-popper-placement^='top'] > .v-tooltip__arrow
+      bottom -4px
+
+    &&[data-popper-placement^='bottom'] > .v-tooltip__arrow
+      top -4px
+
+    &&[data-popper-placement^='left'] > .v-tooltip__arrow
+      right -4px
+
+    &&[data-popper-placement^='right'] > .v-tooltip__arrow
+      left -4px
