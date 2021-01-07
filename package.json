@@ -3,6 +3,10 @@
   "version": "0.0.2-alpha.0",
   "description": "ce-ui component default theme.",
   "main": "lib/index.css",
+  "files": [
+    "lib",
+    "src"
+  ],
   "keywords": [
     "@ce-ui/theme-chalk"
   ],
