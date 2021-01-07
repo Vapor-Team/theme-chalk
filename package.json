@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "build": "gulp build --gulpfile gulpfile.js",
-    "dev": "gulp --gulpfile gulpfile.js"
+    "dev": "gulp --gulpfile gulpfile.js",
+    "prepublish": "yarn build"
   },
   "author": "Vapor-Team",
   "engines": {
